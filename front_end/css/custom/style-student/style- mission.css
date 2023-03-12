@@ -1,0 +1,17 @@
+.mission {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-text);
+  margin: 30px 0;
+}
+
+.table {
+  color: var(--color-text);
+  margin: 50px 0;
+}
+
+:root {
+  --color-text: #000000;
+  --color-orange: #f7941d;
+}

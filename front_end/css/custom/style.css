@@ -1,16 +1,21 @@
-body {
-  background-color: var(--background-color);
+.body {
+  background-image: url("/assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 header {
-  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 header img {
-  height: 70px;
+  height: 60px;
+  margin: 15px 0;
 }
 
 .menu-header a {
   font-weight: 500;
+  margin: 15px 0;
   color: var(--color-text);
 }
 
@@ -18,24 +23,58 @@ header img {
   color: var(--color-orange);
 }
 
+.menu-header a:focus {
+  color: var(--color-orange);
+}
+
+.btn-search {
+  border: solid 1px var(--color-orange);
+  border-radius: 0.375rem;
+  color: var(--color-orange);
+}
+
+.btn-search button {
+  color: var(--color-text);
+}
+
 #footer {
   color: var(--color-text);
   border-top: 10px solid var(--color-orange);
   font-size: 13px;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .footer > div > div:nth-child(2) h6 {
   text-decoration: underline;
   color: var(--color-orange);
 }
+.footer p {
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 footer img {
-  height: 70px;
+  height: 60px;
+}
+
+.search {
+  margin: 15px 0;
+}
+
+.search input {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.375rem;
+  border: solid 1px var(--color-orange);
 }
 
 :root {
-  --background-color: #ffffff;
-  --color-text: #000000;
+  --color-text: #ffffff;
   --color-orange: #f7941d;
+}
+
+::placeholder {
+  color: var(--color-text);
 }
